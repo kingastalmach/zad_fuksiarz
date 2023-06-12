@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/widgets/background/background.dart';
+import 'package:flutter_application_1/features/widgets/background/background_base.dart';
 import 'package:flutter_application_1/features/widgets/header/header.dart';
 
 class FirstPage extends StatelessWidget {
@@ -15,6 +17,8 @@ class FirstPage extends StatelessWidget {
           Column(
             children: [
               Header(),
+              BackgroundBase(),
+              Background(),
             ],
           ),
         ],
