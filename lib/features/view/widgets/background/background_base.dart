@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_application_1/features/widgets/app_colors/app_colors.dart';
+
+import '../app_colors/app_colors.dart';
 
 class BackgroundBase extends StatelessWidget {
   const BackgroundBase({

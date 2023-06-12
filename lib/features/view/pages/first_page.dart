@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/widgets/background/background.dart';
-import 'package:flutter_application_1/features/widgets/background/background_base.dart';
-import 'package:flutter_application_1/features/widgets/header/header.dart';
+import 'package:flutter_application_1/features/view/widgets/background/background.dart';
+import 'package:flutter_application_1/features/view/widgets/background/background_base.dart';
+import 'package:flutter_application_1/features/view/widgets/header/header.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({

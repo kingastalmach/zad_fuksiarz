@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../home/pages/second_page.dart';
+import '../../pages/second_page.dart';
 import '../app_colors/app_colors.dart';
 
 class SearchBar extends StatelessWidget {

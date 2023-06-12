@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/app_colors/app_colors.dart';
-import '../../widgets/search_bar/search_bar_second_page.dart';
+import '../widgets/app_colors/app_colors.dart';
+import '../widgets/search_bar/search_bar_second_page.dart';
 
 class SecondPage extends StatelessWidget {
   SecondPage({
