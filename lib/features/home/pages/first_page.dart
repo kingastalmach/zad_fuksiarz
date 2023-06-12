@@ -14,11 +14,11 @@ class FirstPage extends StatelessWidget {
       body: Stack(
         fit: StackFit.loose,
         children: [
+          BackgroundBase(),
+          Background(),
           Column(
             children: [
               Header(),
-              BackgroundBase(),
-              Background(),
             ],
           ),
         ],
