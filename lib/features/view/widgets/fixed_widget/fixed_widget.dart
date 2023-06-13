@@ -25,6 +25,7 @@ class FixedWidget extends StatelessWidget {
                   CustomText(Strings.moje),
                   VerticalDivider(),
                   CustomText(Strings.live),
+                  Icon(Icons.circle, color: Colors.green, size: 8),
                   VerticalDivider(),
                   CustomText(Strings.hot),
                   VerticalDivider(),
