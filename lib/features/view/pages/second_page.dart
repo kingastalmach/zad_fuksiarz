@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/app_colors/app_colors.dart';
-import '../widgets/search_bar/search_bar_second_page.dart';
+import '../widgets/background/background.dart';
+import '../widgets/background/background_base.dart';
+import '../widgets/search_bars/search_bar_second_page.dart';
 
 class SecondPage extends StatelessWidget {
   SecondPage({
@@ -15,6 +17,8 @@ class SecondPage extends StatelessWidget {
       body: Stack(
         fit: StackFit.loose,
         children: [
+          const BackgroundBase(),
+          const Background(),
           Column(
             children: [
               Container(

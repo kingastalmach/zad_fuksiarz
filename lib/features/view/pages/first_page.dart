@@ -2,30 +2,33 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features/view/widgets/background/background.dart';
 import 'package:flutter_application_1/features/view/widgets/background/background_base.dart';
 import 'package:flutter_application_1/features/view/widgets/header/header.dart';
+import 'package:flutter_application_1/features/view/widgets/search_bars/search_bar_w_first_page.dart';
 import '../widgets/dividers/divider_widget.dart';
 import '../widgets/fixed_widget/fixed_widget.dart';
 
 class FirstPage extends StatelessWidget {
-  const FirstPage({
+  FirstPage({
     Key? key,
   }) : super(key: key);
 
+  final TextEditingController _textEditingController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Stack(
         fit: StackFit.loose,
         children: [
-          BackgroundBase(),
-          Background(),
+          const BackgroundBase(),
+          const Background(),
           Column(
             children: [
-              Header(),
-              DividerWidget(),
-              SearchBar(),
-              DividerWidget(),
-              FixedWidget(),
-              DividerWidget(),
+              const Header(),
+              const DividerWidget(),
+              SearchBarWidget(textEditingController: _textEditingController),
+              const DividerWidget(),
+              const FixedWidget(),
+              const DividerWidget(),
             ],
           ),
         ],
