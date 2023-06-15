@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features/view/widgets/background/background.dart';
 import 'package:flutter_application_1/features/view/widgets/background/background_base.dart';
+import 'package:flutter_application_1/features/view/widgets/expansion_panel_list.dart/expansion_panel_list.dart';
 import 'package:flutter_application_1/features/view/widgets/header/header.dart';
 import 'package:flutter_application_1/features/view/widgets/search_bars/search_bar_w_first_page.dart';
 import '../widgets/dividers/divider_widget.dart';
@@ -29,6 +30,7 @@ class FirstPage extends StatelessWidget {
               const DividerWidget(),
               const FixedWidget(),
               const DividerWidget(),
+              const CustomExPanel(),
             ],
           ),
         ],
