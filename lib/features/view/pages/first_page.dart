@@ -30,7 +30,11 @@ class FirstPage extends StatelessWidget {
               const DividerWidget(),
               const FixedWidget(),
               const DividerWidget(),
-              const CustomExPanel(),
+              const Expanded(
+                child: SingleChildScrollView(
+                  child: CustomExPanel(),
+                ),
+              ),
             ],
           ),
         ],
