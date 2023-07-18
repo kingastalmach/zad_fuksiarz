@@ -26,41 +26,39 @@ class _CustomExPanelState extends State<CustomExPanel> {
       return Item(
         headerText: 'Panel $index',
         expandedText: 'This is item number $index',
+        isExpanded: false,
       );
     },
   );
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: ExpansionPanelList(
-        expansionCallback: (int index, bool isExpanded) {
-          setState(() {
-            _data[index].isExpanded = !isExpanded;
-          });
-        },
-        children: _data.map<ExpansionPanel>((Item item) {
-          return ExpansionPanel(
-              headerBuilder: (BuildContext context, bool isExpanded) {
-                return ListTile(
-                  title: Text(item.headerText),
-                );
+    return ExpansionPanelList(
+      expansionCallback: (int index, bool isExpanded) {
+        setState(() {
+          _data[index].isExpanded = !isExpanded;
+        });
+      },
+      children: _data.map<ExpansionPanel>((Item item) {
+        return ExpansionPanel(
+            headerBuilder: (BuildContext context, bool isExpanded) {
+              return ListTile(
+                title: Text(item.headerText),
+              );
+            },
+            body: ListTile(
+              title: Text(item.expandedText),
+              subtitle: const Text('To delete this item, click trash icon'),
+              trailing: const Icon(
+                Icons.delete,
+                color: Colors.red,
+              ),
+              onTap: () {
+                setState(() {
+                  _data.removeWhere((Item currentItem) => item == currentItem);
+                });
               },
-              body: ListTile(
-                title: Text(item.expandedText),
-                subtitle: const Text('To delete this item, click trash icon'),
-                trailing: const Icon(
-                  Icons.delete,
-                  color: Colors.red,
-                ),
-                onTap: () {
-                  setState(() {
-                    _data
-                        .removeWhere((Item currentItem) => item == currentItem);
-                  });
-                },
-              ));
-        }).toList(),
-      ),
+            ));
+      }).toList(),
     );
   }
 }

@@ -1,4 +1,4 @@
-import '../../data/data_sources/sports_by_category.dart';
+import '../../data/data_sources/sports_remote_data_sources.dart';
 import '../models/sports_model.dart';
 
 class SportsRepository {
@@ -11,6 +11,7 @@ class SportsRepository {
   }) async {
     final json = await _sportsRemoteDataSource.getSportsData(
       categoryId: categoryId,
+      categoryName: 'categoryName',
     );
 
     if (json == null) {
@@ -19,4 +20,8 @@ class SportsRepository {
 
     return SportsModel.fromJson(json);
   }
+
+  getGenres() {}
+
+  getSportsData(categoryId) {}
 }

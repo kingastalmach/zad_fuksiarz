@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 class SportsRemoteDataSource {
   Future<Map<String, dynamic>?> getSportsData({
     required int categoryId,
+    required String categoryName,
   }) async {
     try {
       final response = await Dio().get<Map<String, dynamic>>(

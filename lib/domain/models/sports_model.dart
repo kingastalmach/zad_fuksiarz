@@ -1,15 +1,23 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'sports_model.g.dart';
+
+@JsonSerializable()
 class SportsModel {
   const SportsModel({
     required this.categoryId,
+    required this.categoryName,
   });
 
+  @JsonKey(name: 'categoryId')
   final int categoryId;
 
-  factory SportsModel.fromJson(Map<String, dynamic> json) {
-    return SportsModel(
-      categoryId: json['categoryId'] as int,
-    );
-  }
+  @JsonKey(name: 'categoryName')
+  final String categoryName;
+
+  factory SportsModel.fromJson(Map<String, dynamic> json) =>
+      _$SportsModelFromJson(json);
+  Map<String, dynamic> toJson() => _$SportsModelToJson(this);
 }
 
 // "categoryId": 2,

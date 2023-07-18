@@ -67,8 +67,8 @@ class SearchBarScPgState extends State<SearchBarScPg> {
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(5),
               borderSide: const BorderSide(
-                color: AppColors.kInputBorder,
-                width: 1,
+                color: AppColors.text,
+                width: 2,
               ),
             ),
           ),
