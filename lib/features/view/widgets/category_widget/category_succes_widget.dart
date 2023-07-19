@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../domain/models/genre.dart';
-import '../sports_by_category_widget/bloc/sports_by_category_bloc.dart';
-import 'bloc/category_widget_bloc.dart';
+import '../../blocs/category_widget_bloc.dart';
+import '../../blocs/sports_by_category_bloc.dart';
 import 'category_item.dart';
 
 class CategorySuccessWidget extends StatelessWidget {

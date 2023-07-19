@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../../domain/models/genre.dart';
-import 'bloc/category_widget_bloc.dart';
+import '../../blocs/category_widget_bloc.dart';
 
 typedef CategoryCLicked = Function(Genre categorySelected);
 

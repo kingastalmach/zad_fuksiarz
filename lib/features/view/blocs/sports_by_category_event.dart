@@ -13,4 +13,3 @@ class GetSportsByCategory extends SportsByCategoryEvent {
 
   get categoryId => null;
 }
-

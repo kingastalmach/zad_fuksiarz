@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../blocs/sports_by_category_bloc.dart';
 import '../error_widget/error_widget.dart';
-import 'bloc/sports_by_category_bloc.dart';
 import 'sports_by_category_succes_widget.dart';
 
 class SportsByCategoryWidget extends StatelessWidget {

@@ -22,13 +22,13 @@ class CustomExPanel extends StatefulWidget {
 class _CustomExPanelState extends State<CustomExPanel> {
   final List<Item> _data = List<Item>.generate(
     11,
-    (int index) {
+    (String categoryName) {
       return Item(
-        headerText: 'Panel $index',
-        expandedText: 'This is item number $index',
+        headerText: categoryName,
+        expandedText: categoryName,
         isExpanded: false,
       );
-    },
+    } as Item Function(int index),
   );
   @override
   Widget build(BuildContext context) {
