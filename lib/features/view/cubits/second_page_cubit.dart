@@ -1,6 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../app/core/enums.dart';
 import '../../../../domain/models/sports_model.dart';
 import '../../../../domain/repositories/sports_repository.dart';

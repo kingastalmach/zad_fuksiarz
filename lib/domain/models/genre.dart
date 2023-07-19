@@ -31,15 +31,3 @@ class Genre {
   factory Genre.fromJson(Map<String, dynamic> json) => _$GenreFromJson(json);
   Map<String, dynamic> toJson() => _$GenreToJson(this);
 }
-// "categoryId": 2,
-//       "remoteId": 0,
-//       "categoryName": "Koszykówka",
-//       "level": 1,
-//       "parentCategory": 0,
-//       "sportId": 2,
-//       "eventsCount": 63,
-//       "sortOrder": 40,
-//       "treatAsSport": 2,
-//       "categoryFlag": "null",
-//       "parentName": "Sports",
-//       "sportName": "Koszykówka"
